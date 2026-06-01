@@ -3,18 +3,23 @@
 set -ex
 
 sudo pacman -S --needed base-devel
-git clone https://aur.archlinux.org/paru.git /tmp
+git clone https://aur.archlinux.org/paru.git /tmp/paru
 cd /tmp/paru
 makepkg -si
 cd -
 
-mkdir $HOME/.config/dotman/
+mkdir -p $HOME/.config/dotman/
 cp config.toml $HOME/.config/dotman/
+
+mkdir -p $HOME/Documents/dev/rice
+git clone git@github.com:mkanilsson-dotfiles/main.git $HOME/Documents/dev/rice/dotmain-main
 
 paru -S kitty hyprland firefox pavucontrol patchance zsh firefox \
     discord waybar swaync nvim tree-sitter ardour \
     neural-amp-modeler-ui-lv2 rofi guitarix cargo bat ripgrep \
-    zathura zathura-pdf-poppler mpv
+    zathura zathura-pdf-poppler mpv luarocks lua51 exa wasm-tools \
+    fnm gnome-tweaks selectdefaultapplication ttf-jetbrains-mono \
+    swaybg linux-headers dbgate gtklock
 
 
 
