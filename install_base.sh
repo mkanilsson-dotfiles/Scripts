@@ -20,7 +20,7 @@ paru -S kitty hyprland firefox pavucontrol patchance zsh firefox \
     zathura zathura-pdf-poppler mpv luarocks lua51 exa wasm-tools \
     fnm gnome-tweaks selectdefaultapplication ttf-jetbrains-mono \
     swaybg linux-headers dbgate gtklock ttf-jetbrains-mono-nerd \
-    arch-install-scripts
+    arch-install-scripts networkmanager-l2tp strongswan
 
 
 
